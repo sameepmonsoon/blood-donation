@@ -1,0 +1,91 @@
+body, html{
+
+	height:100%;
+	margin-left:1px;
+	margin-right:1px;
+	font-size: 16px;
+	font-family: "lato" , sans-serif;
+	font-weight:400; 
+	line-height:1.8em;
+	color:#666;
+	
+}
+
+
+.div1,.div2{
+	position: relative;
+	opacity: 0.70;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* for parallex
+	fixed=parallex
+	srcoll=normal*/
+	background-attachment: fixed;
+
+}
+
+
+.div1{
+
+	
+	min-height: 70%;
+
+}
+
+
+.div2{
+
+	min-height: 400px;
+}
+
+.section{
+	/*background-image: url(color.png);*/
+	box-shadow:none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 300px;
+	margin-right: 300px;
+	height: auto;
+	border-radius: 4rem;
+	max-width: 50%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: white;
+	text-align: center;
+	padding:50px 80px;
+	text-decoration-color: black;
+
+
+}
+.div2.span2{
+    background-size: cover;
+	background-attachment: fixed;
+	background-color: white;
+	text-align: center;
+	padding:50px 80px;
+	text-decoration-color: black;
+}
+
+.div11{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	letter-spacing: 11px;
+	text-transform: uppercase;
+	
+}
+
+
+	
+
+
+.div1 .span1{
+	background-color: black;
+	text-align: center;
+	border-radius: .5rem;	
+	padding: 10px;
+	
+	
+}

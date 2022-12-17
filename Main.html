@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blood Donation</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+
+	<style type="text/css">
+		
+		#option{
+			width: 59%;
+		}
+            .popup{
+                position: fixed;
+                display: none;
+                height: 50%;
+                width: 30%x;
+                background-color:rgba(0,0,0,0.6);
+                z-index: 10;
+                top:0;
+                left: 0;
+                border: none;	
+                outline: none;
+
+
+         }
+         .popup:hover{
+         	background-color: grey;
+
+         }
+         .popup>.popup-container{
+            background-color: white;
+            position: absolute;
+            display: block;
+            min-height: 50px;
+            width:400px;
+            top:20%;
+            left:30%;
+            padding: 10px;
+            outline: none;
+            border: none;
+           
+         }
+
+         .popup>.popup-container>.close{
+             position:relative;
+             right: 5px;
+             top:5px;
+             display: block;
+             cursor: pointer;
+             padding: 20px;
+         }
+         .popup>.popup-container>.close:hover{
+             background-color: red;
+             width: 5%;
+             position: top;
+             color:white;
+             border-radius:0%;
+         }
+         .popup>.popup-container>button{
+             float: right;
+             background-color: green;
+             color:white;
+             padding: 10px 30px;
+             border:1px solid silver;
+             margin-right: 5px;
+             cursor: pointer;
+         }
+         .popup>.popup-container>p{
+             font-size: 20px;
+         }
+         .popup>.popup-container>form>input{
+             display: block;
+             border-radius: 10px;
+             width: 80%;
+             padding: 20px;
+             border-color:silver;
+         }
+         .popup>.popup-container>button:hover{background-color: rgb(13, 112, 112);}
+           option:active{
+           	background-color: red;
+           }
+            </style>
+
+</head>
+<body>
+
+	<section class="white">
+		<div class="menu ">
+			<nav><ul>
+			<li><a>Home</a></li>
+			<li><a>Who can Donate?</a><ul>
+				<li><a href="oops.html">Health Eligibility</a></li>
+				<li><a href="oops.html">Gender Basis</a></li>
+				<li><a href="oops.html">Occupation  Basis</a></li>
+				<li><a href="oops.html">Donars & Disability <i class="fas fa-angle-down"></i>
+</a></li>
+			</ul></li>
+
+			<li><a>Get Involved</a>
+				<ul>
+					<Li><a href="oops.html">Become a Member</a></Li>
+					<Li><a href="oops.html">Become a Volunteer</a></Li>
+					<li><a href="oops.html">Register Online</a></li>
+					<li><a href="oops.html">Prepare</a></li>
+					<li><a href="oops.html">Donation Venues</a></li>
+				</ul></li>
+				<li><a>Resources</a>
+					<ul>
+						<li><a href="oops.html">News</a></li>
+						<li><a href="oops.html">Events</a></li>
+						<li><a href="oops.html">Donors</a></li>
+						<li><a href="oops.html">Notice</a></li>
+						<li><a href="oops.html">Blood Bank Info</a></li>
+					</ul></li>
+			<li><a>What We Do?</a>
+			<ul>
+						<li><a>Health Care</a></li>
+						<li><a></a></li>
+						<li><a>Donation</a></li>
+					</ul></li>
+		</ul>
+		<br>
+		<br>
+		</nav>
+		</div>
+		
+
+
+		   <!--Popup icons-->
+<!--                       -->
+
+		<div class="popupup"><button onclick="display_popup();">Login</button>
+			
+        <div class="popup" id='popup'>
+            <div class="popup-container">
+                <p>
+                    <form>
+                        Username:<input type="text">
+                        <br>Password:<input type="password">
+                    </form>
+                </p>
+                <button onclick="close_popup();">Cancel</button>
+                <button>LogIn</button>
+            </div>
+        </div>
+</div>
+		<div class="logo">
+			<img src="logo (1).png">
+		</div>
+
+
+
+		<div class="black">
+			<h1>Blood Donation</h1>
+             <p><h3> Safe blood saves lives and improves health.</h3> </p>
+             <span></span>
+
+
+
+             <!--Search icons using form-->
+
+
+             <form class="red">
+
+             	<!--<input class="dark" type="text" name="text" placeholder="Enter the type of blood">-->
+
+             	<select id="option" class="dark" >
+  <option value="Choose Blood Group">--Choose Blood Group--</option>
+  <option value="A+ve">A+ve</option>
+  <option value="A-ve">A-ve</option>
+  <option value="B+ve">B+ve</option>
+  <option value="B-ve">B-ve</option>
+  <option value="AB+ve">AB+ve</option>
+  <option value="AB-ve">AB-ve</option>
+  <option value="O+ve">O+ve</option>
+  <option value="O-ve">O-ve</option>
+</select>
+<select id="option" class="dark" >
+ <option value="--Choose District--">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--Choose District--</option>
+	<option value="1">Syangja         </option>
+	<option value="2">Dhading             </option>
+	<option value="3">Kathmandu           </option>
+	<option value="4">Kavrepalanchok      </option>
+	<option value="5">Lalitpur            </option>
+	<option value="6">Nuwakot             </option>
+	<option value="7">Rasuwa              </option>
+	<option value="8">Sindhupalchok       </option>
+	<option value="9">Banke               </option>
+	<option value="10">Bardiya             </option>
+	<option value="11">Dailekh             </option>
+	<option value="12">Jajarkot            </option>
+	<option value="13">Surkhet             </option>
+	<option value="14">Baglung             </option>
+	<option value="15">Mustang             </option>
+	<option value="16">Myagdi              </option>
+	<option value="17">Parbat              </option>
+	<option value="18">Gorkha              </option>
+	<option value="19">Kaski               </option>
+	<option value="20">Lamjung             </option>
+	<option value="21">Manang              </option>
+	<option value="22">Bhaktapur            </option>
+	<option value="23">Tanahu              </option>
+	<option value="24">Dhanusa             </option>
+	<option value="25">Dolakha             </option>
+	<option value="26">Mahottari           </option>
+	<option value="27">Ramechhap           </option>
+	<option value="28">Sarlahi             </option>
+	<option value="29">Sindhuli            </option>
+	<option value="30">Dolpa               </option>
+	<option value="31">Humla               </option>
+	<option value="32">Jumla               </option>
+	<option value="33">Kalikot             </option>
+	<option value="34">Mugu                </option>
+	<option value="35">Bhojpur             </option>
+	<option value="36">Dhankuta            </option>
+	<option value="37">Morang              </option>
+	<option value="38">Sankhuwasabha       </option>
+	<option value="39">Sunsari             </option>
+	<option value="40">Terhathum           </option>
+	<option value="41">Arghakhanchi        </option>
+	<option value="42">Gulmi               </option>
+	<option value="43">Kapilvastu          </option>
+	<option value="44">Nawalparasi         </option>
+	<option value="45">Palpa               </option>
+	<option value="46">Rupandehi           </option>
+	<option value="47">Baitadi             </option>
+	<option value="48">Dadeldhura          </option>
+	<option value="49">Darchula            </option>
+	<option value="50">Kanchanpur          </option>
+	<option value="51">Ilam                </option>
+	<option value="52">Jhapa               </option>
+	<option value="53">Panchthar           </option>
+	<option value="54">Taplejung           </option>
+	<option value="55">Bara                </option>
+	<option value="56">Chitwan             </option>
+	<option value="57">Makwanpur           </option>
+	<option value="58">Parsa               </option>
+	<option value="59">Rautahat            </option>
+	<option value="60">Dang                </option>
+	<option value="61">Pyuthan             </option>
+	<option value="62">Rolpa               </option>
+	<option value="63">Rukum               </option>
+	<option value="64">Salyan              </option>
+	<option value="65">Khotang             </option>
+	<option value="66">Okhaldhunga         </option>
+	<option value="67">Saptari             </option>
+	<option value="68">Siraha              </option>
+	<option value="69">Solukhumbu          </option>
+	<option value="70">Udayapur            </option>
+	<option value="71">Achham              </option>
+	<option value="72">Bajhang             </option>
+	<option value="73">Bajura              </option>
+	<option value="74">Doti                </option>
+	<option value="75">Kailali             </option>
+</select>
+             	<button type="Submit"><i class="fa fa-search"></i>&nbsp;Search</button>
+
+
+             </form>
+             <!--<br><br><br><br><br><br><br>
+             <section><p class="req"><button type="submit">Request Blood</button></section>-->
+		</div>
+
+	</section>
+
+	<hr>
+	<section align="center"><h2> “Bring a life back to power. Make blood donation your responsibility”</h2></section>
+	<hr>
+	
+	<section class="pink">
+		<div class="der">
+			<img class="img" src="blood6.jpg"><p> Latest Blogs/News</p>
+			<a  href="oops.html" target="_blank"><button type="Submit">Read More</button></a>
+		</div>
+	</section>
+	<section class="pink">
+		<div class="der">
+			<img class="img" src="blood1.jpg">
+			<p>Create a Donor account!!</p>
+			<a href="account1.html" target="_blank"><button type="Submit">Donor Account</button></a>
+		</div>
+	</section><section class="pink">
+		<div class="der">
+			<img class="img" src="Volunteer (1).jpg">
+			<p>True Happiness is Helping Others</p>
+			<a href="Volunteer.html" target="_blank"><button>Become a Volunteer</button></a>
+		</div>
+	</section>
+	<br>
+	<br>
+		<footer>
+			<hr>
+			 <section align="center"><h3>“You’re somebody’s type”</h3></section>
+			 <hr>
+			<div class="dark">
+				<div class="foot">
+			
+				<!-- <h2>Navigation</h2> -->
+					<ul>
+						<br>
+						<li><a href="oops.html">About us</a></li><br>
+						<li><a href="oops.html">Portfolio</a></li><br>
+						<li><a href="oops.html">Privacy Policy</a></li><br>
+						<li><a href="oops.html">Support us</a></li><br>
+					</ul>
+
+<section class="icons">
+	<br>
+	<br>
+		<div class="media">
+			<a target="_blank" href="https:\\www.twitter.com"><img class="img" src="twitter.png">
+			</a>
+		</div>
+	</section>
+	<section class="icons">
+	<br>
+	<br>
+		<div class="media">
+			<a target="_blank" href="https:\\www.instagram.Com"><img class="img" src="insta.png"></a>
+			
+		</div>
+	</section>
+	<section class="icons">
+	<br>
+	<br>
+		<div class="media">
+			<a target="_blank" href="https:\\www.facebook.com"><img class="img" src="fb.png">
+			</a>
+		</div>
+	</section>
+					<!-- Comment Section -->
+
+              
+
+				<div class="Comment">
+					<ul>
+						<li><h4>Comment</h4></li>
+						<li>
+							<textarea rows="5" cols="50" type="Comment" name=""></textarea>
+							<button type="submit">Send</button>
+						</li>
+					 </ul>
+				</div>
+
+			</div>
+
+
+				<!--<div class="foot">
+					<h2>About Us</h2>
+					<ul><li><a>Nepal</a></li>
+						<li><a>Nepali</a></li><li><a>Nepalne</a></li></ul>
+				</div>-->
+
+
+
+
+
+			</div>
+			<hr>
+
+		</footer>
+	  <br><script type="text/javascript"> function display_popup(){
+                document.getElementById('popup').style.display="block";
+            }
+            function close_popup(){
+                document.getElementById('popup').style.display="none";
+            }</script>
+
+</body>
+</html>
